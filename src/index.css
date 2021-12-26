@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=IBM+Plex+Mono:wght@100&family=Inconsolata:wght@900&display=swap');
+*{
+  margin : 0;
+  padding : 0;
+  font-family: 'Inconsolata';
+  font-size : large;
+  color :#742ca8;
+  font-weight :bolder;
+  background-color: #151515;
+}
+
+.header{
+  display: flex;
+  flex-direction : column;
+  justify-content : center;
+  align-items: center;
+  gap : 2rem;
+  height: 22rem;
+  width: 100%;
+  background-color: #151515;
+}
+
+.avatar{
+  margin-top : 1.1rem;
+  height: 10rem;
+  width : 10rem;
+  border-radius: 50%;
+}
+
+
+
+.mainMenu{
+  display : flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content :center;
+  gap : 3rem;
+  align-items: center;
+}
+
+.menu{
+  border : solid;
+  border-radius: 10px;
+  padding: .5rem;
+  background-color: #151515;
+}
+
+.menu:hover{
+  padding : .8rem;
+  transform: translateY(-10px);
+}
+.activeMenu:hover{
+  padding : .8rem;
+  transform: translateY(-10px);
+}
+
+.menu:active{
+  background-color : #742ca8;
+}
+.activeMenu:active{
+  background-color : #742ca8;
+}
+
+.activeMenu{
+  border : solid;
+  border-radius: 10px;
+  padding: .5rem;
+  background-color: #742ca8;
+  color : #151515;
+}
+
+/* work body styling */
+.workBody{
+  background-color: #151515;
+  display : flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  padding-top : 2rem;  
+  gap : 3rem;
+}
+
+.workCard{
+  display: flex;
+  flex-direction: row;
+  border : solid;
+  border-width: .4rem;
+  padding: .5rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap : 2rem;
+  max-width : 70rem;
+  padding-top : 1.2rem;
+  padding-bottom : 1.2rem;
+}
+
+.workInfo{
+  display: flex;
+  flex-direction : column;
+  justify-content: flex-start;
+  gap : 1rem;
+}
+
+.workImage{
+  height: 10rem;
+  width : auto;
+  margin-left: 1rem;
+}
+
+.workTitle{
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-decoration : underline;
+}
+.workDate{
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* SocialMedia Body Styling */
+.socialBodyFlex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.socialBody{
+  margin-top : 4rem;
+  width : 90vw;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.socialCard{
+  width : 4rem;
+  height : 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialImage{
+  width : 7rem;
+  height : 7rem;
+  border :solid;
+ border-width : .4rem;
+  border-radius: 50%;
+}
+
+/* art styling */
+.artBody{
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap : 3rem;
+}
+
+.artImage{
+  max-width: 45vw;
+  height: auto;
+  border : solid;
+  border-width : .4rem;
+}
+
+/* video edit styling */
+.videoEditBody{
+  display : flex;
+  flex-direction : column;
+  justify-content: center;
+  align-items: center;
+}
+.videoEdit{
+  margin-top: .4rem;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  justify-content: center;
+  align-items: center;
+  gap : 1rem;
+}
+
+.videoCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border : solid;
+  border-width: .4rem;
+}
