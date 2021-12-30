@@ -1,4 +1,5 @@
 import ArtCard from "./ArtCard"
+import { useState } from "react"
 
 //all images importing
 import toji from "./assets/art/toji.jpg"
@@ -40,49 +41,78 @@ import zenitsu from "./assets/art/zenitsu.jpg"
 import prince_of_persia from "./assets/art/prince_of_persia.jpg"
 import shikamaru from "./assets/art/shikamaru.jpg"
 
-//
+
+{/* <ArtCard image = {toji}/>
+<ArtCard image = {horikita}/>
+<ArtCard image = {goku}/>
+<ArtCard image = {pashuram}/>
+<ArtCard image = {bulky}/>
+<ArtCard image = {another_girl}/>
+<ArtCard image = {astronaut}/>
+<ArtCard image = {kakashi}/>
+<ArtCard image = {wolf}/>
+<ArtCard image = {some_dude}/>
+<ArtCard image = {girl_from_ralph}/>
+<ArtCard image = {hanuman}/>
+<ArtCard image = {hulk}/>
+<ArtCard image = {owl}/>
+<ArtCard image = {ninja}/>
+<ArtCard image = {saitama}/>
+<ArtCard image = {redhood}/>
+<ArtCard image = {landscape}/>
+<ArtCard image = {some_girl}/>
+<ArtCard image = {batman_and_robin}/>
+<ArtCard image = {girlcartoon}/>
+<ArtCard image = {levi}/>
+<ArtCard image = {spiderman}/>
+<ArtCard image = {deku}/>
+<ArtCard image = {light}/>
+<ArtCard image = {turtle}/>
+<ArtCard image = {all_might}/>
+<ArtCard image = {cat_girl}/>
+<ArtCard image = {hand}/>
+<ArtCard image = {anime_boys3}/>
+<ArtCard image = {anime_boys4}/>
+<ArtCard image = {anime_boys1}/>
+<ArtCard image = {anime_boys2}/>
+<ArtCard image = {naruto}/>
+<ArtCard image = {madara}/>
+<ArtCard image = {zenitsu}/>
+<ArtCard image = {prince_of_persia}/>
+<ArtCard image = {shikamaru}/> */}
+
+
 
 const Art = () => {
+    const artWork = [toji, horikita, goku, pashuram, bulky, another_girl, astronaut, kakashi, wolf, some_dude, girl_from_ralph, hanuman, hulk, owl, ninja, saitama, redhood, landscape, some_girl, batman_and_robin, girlcartoon, levi, spiderman, deku, light, turtle, all_might, cat_girl, hand, anime_boys1, anime_boys2, anime_boys3, anime_boys4,  naruto, madara, zenitsu, prince_of_persia, shikamaru]
+
+
+    //right now length is 38
+
+    const [index, setIndex] = useState(1)
+
+    const next = () =>{
+        if(index < 38){
+            setIndex(index + 1)
+        }
+    }
+
+    const back = () =>{
+        if(index > 1){
+            setIndex(index-1)
+        }
+    }
+
+    console.log(artWork.length)
     return (
         <div className = "artBody">
-            <ArtCard image = {toji}/>
-            <ArtCard image = {horikita}/>
-            <ArtCard image = {goku}/>
-            <ArtCard image = {pashuram}/>
-            <ArtCard image = {bulky}/>
-            <ArtCard image = {another_girl}/>
-            <ArtCard image = {astronaut}/>
-            <ArtCard image = {kakashi}/>
-            <ArtCard image = {wolf}/>
-            <ArtCard image = {some_dude}/>
-            <ArtCard image = {girl_from_ralph}/>
-            <ArtCard image = {hanuman}/>
-            <ArtCard image = {hulk}/>
-            <ArtCard image = {owl}/>
-            <ArtCard image = {ninja}/>
-            <ArtCard image = {saitama}/>
-            <ArtCard image = {redhood}/>
-            <ArtCard image = {landscape}/>
-            <ArtCard image = {some_girl}/>
-            <ArtCard image = {batman_and_robin}/>
-            <ArtCard image = {girlcartoon}/>
-            <ArtCard image = {levi}/>
-            <ArtCard image = {spiderman}/>
-            <ArtCard image = {deku}/>
-            <ArtCard image = {light}/>
-            <ArtCard image = {turtle}/>
-            <ArtCard image = {all_might}/>
-            <ArtCard image = {cat_girl}/>
-            <ArtCard image = {hand}/>
-            <ArtCard image = {anime_boys3}/>
-            <ArtCard image = {anime_boys4}/>
-            <ArtCard image = {anime_boys1}/>
-            <ArtCard image = {anime_boys2}/>
-            <ArtCard image = {naruto}/>
-            <ArtCard image = {madara}/>
-            <ArtCard image = {zenitsu}/>
-            <ArtCard image = {prince_of_persia}/>
-            <ArtCard image = {shikamaru}/>
+            <ArtCard image = {artWork[index - 1]} />
+            
+            <div className = "artControl">
+                <button className = "artButton" onClick = {back}> back </button>
+                <label > {index}/{artWork.length} </label>
+                <button className = "artButton" onClick = {next}> next</button>
+            </div>
 
         </div>
     )
