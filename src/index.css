@@ -9,6 +9,13 @@
   background-color: #151515;
 }
 
+.container{
+  margin : 1rem;
+  border: solid;
+  border-width: .5rem;
+  padding-bottom: 1rem;
+}
+
 .header{
   display: flex;
   flex-direction : column;
@@ -162,6 +169,7 @@
   align-items: center;
   gap : .3rem;
   margin-bottom : 2rem;
+  margin-top : 2rem;
 }
 
 .artImage{
