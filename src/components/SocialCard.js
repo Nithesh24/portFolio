@@ -3,7 +3,7 @@ const SocialBody = (props) =>{
     return(
         <div className = "socialCard">
             <a href = {props.href} className = "socialHref">
-                <img src = {props.image} className = "socialImage"></img>
+                <img src = {props.image} key = {props.image} className = "socialImage"></img>
             </a>
         </div>
 
