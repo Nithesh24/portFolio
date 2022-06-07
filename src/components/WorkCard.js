@@ -12,7 +12,7 @@ const WorkCard = (props) =>{
                     {props.about}
                 </div>
                 <a className="workLink" href = {props.link}>
-                    {props.link}
+                    click here to visit site
                 </a>
                 <div className = "workDate">
                     {props.date}

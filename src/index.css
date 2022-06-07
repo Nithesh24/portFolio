@@ -34,6 +34,7 @@
   border : solid;
   border-radius: 30px;
   border-width: .2rem;
+  margin-top: 2%;
 }
 
 
@@ -41,17 +42,24 @@
 .mainMenu{
   display : flex;
   flex-direction: row;
-  width: 100%;
+  padding : 2 rem;
+  padding-bottom: 0;
+  width: 90%;
   height: 100%;
   justify-content :center;
-  gap : 3rem;
+  gap : 3%;
   align-items: center;
+}
+
+.bio{
+  padding : 1rem;
 }
 
 .menu{
   border : solid;
   border-radius: 10px;
   padding: .5rem;
+  font-size : 85%;
   background-color: #151515;
 }
 
@@ -88,20 +96,20 @@
   height: auto;
   justify-content: center;
   align-items: center;
-  padding-top : 2rem;  
+  padding-top : 12%;  
   gap : 3rem;
 }
 
 .workCard{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   border : solid;
   border-width: .4rem;
   padding: .5rem;
   justify-content: flex-start;
   align-items: flex-start;
   gap : 2rem;
-  max-width : 70rem;
+  max-width : 80%;
   padding-top : 1.2rem;
   padding-bottom : 1.2rem;
 }
@@ -109,13 +117,14 @@
 .workInfo{
   display: flex;
   flex-direction : column;
+  width : 95%;
   justify-content: flex-start;
   gap : 1rem;
 }
 
 .workImage{
-  height: 10rem;
-  width : auto;
+  width : 90%;
+  height: auto;
   margin-left: 1rem;
 }
 
@@ -140,23 +149,24 @@
 }
 .socialBody{
   margin-top : 4rem;
-  width : 90vw;
+  width : 90%;
   display: flex;
   justify-content: space-evenly;
+  gap : 5%;
 
 }
 
 .socialCard{
-  width : 4rem;
-  height : 4rem;
+  width : 20%;
+  height : 20%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .socialImage{
-  width : 7rem;
-  height : 7rem;
+  width : 100%;
+  height: 100%;
   border :solid;
  border-width : .4rem;
   border-radius: 50%;
@@ -171,10 +181,11 @@
   gap : .3rem;
   margin-bottom : 2rem;
   margin-top : 2rem;
+  padding-top : 10%;
 }
 
 .artImage{
-  max-width: 45vw;
+  max-width: 90%;
   height: auto;
   border : solid;
   border-width : .4rem;
@@ -222,4 +233,9 @@
   padding: 1rem;
   border : solid;
   border-width: .4rem;
+  width : 80%;
+}
+
+.videoImage{
+  width : 100%;
 }
