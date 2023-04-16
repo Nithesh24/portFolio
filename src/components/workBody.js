@@ -6,7 +6,7 @@ import turtle from "./assets/turtle_game.png"
 import dollars from "./assets/dollars.png"
 import jet_game from "./assets/jet_game.png"
 import college_buddy from "./assets/college_buddy.png"
-import watch_list from "./assets/college_buddy.png"
+import watch_list from "./assets/watch_list.png"
 
 
 const WorkBody = (props) =>{
