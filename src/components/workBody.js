@@ -7,6 +7,7 @@ import dollars from "./assets/dollars.png"
 import jet_game from "./assets/jet_game.png"
 import college_buddy from "./assets/college_buddy.png"
 import watch_list from "./assets/watch_list.png"
+import portfolio from "./assets/portfolio.png"
 
 
 const WorkBody = (props) =>{
@@ -17,9 +18,11 @@ const WorkBody = (props) =>{
 
             <WorkCard title = "College Buddy" image = {college_buddy} about = "Made this for 3rd sem college mini project with a friend" link = "https://collegebuddy007.netlify.app/main/index.html" date = "2023/03/15" />
 
+            <WorkCard title = "Portfolio" image = {portfolio} about = "My own portfolio website made using React.js framework" link = "https://nitheshkumar.netlify.app/" date = "2022/07/07" />
+
             <WorkCard title = "CyberPunk Calculator" image = {calc} about = "Made a cyber punk themed calculator using vanila js because i like vanila. And also tried some neon effect in it" link = "https://cyberpunk-calculator.netlify.app/" date = "2021/12/03" />
 
-            <WorkCard title = "Dollars ChatSite" image = {dollars} about = "Inspired from anime called durara made this site. Password is 'baccano'. And its  not encrypted at all and also the password is just for show it doesn't do anything. and chat ui is also not like anime because its lil to hard to replicate and i am noob at css" link = "https://durarachat.netlify.app/" date = "2021/04/29" />
+            <WorkCard title = "Dollars ChatSite" image = {dollars} about = "Inspired from anime called durara made this site. Password is 'baccano'. And its  not encrypted at all and also the password is just for show it doesn't do anything. Server is currently down but the source code is still available on my github" link = "https://durarachat.netlify.app/" date = "2021/04/29" />
 
             <WorkCard title = "Jet Game" image = {jet_game} about = "Copy of famous game called flappy birds. Making pipe obstacle was little hard and so i just replaced the obstacle with rockets. And database i might add it someday but not today XD." link = "https://jetflyfly.netlify.app/" date = "2021/04/25" />
 
