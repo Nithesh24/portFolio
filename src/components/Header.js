@@ -18,7 +18,7 @@ const Header = (props) =>{
                 <img src ={props.avatar} alt = "image" className = "avatar"/>
             </div>
             <div className = "bio">
-                <p>Hello I am Nithesh Kumar 20 year old student.</p>
+                <p>Hello I am Nithesh Kumar 22 year old student.</p>
             </div>
             <div className = "mainMenu">
                 <button className = {props.showBody === 'work' ? "activeMenu" : "menu"} onClick = {() => props.onClick('work')} >work</button>
